@@ -3954,56 +3954,68 @@ input, select, textarea {
    強行覆蓋 Forty 模板的深藍色背景 (改為三種藍色系)
    =================================================== */
 
-/* 1. 主背景與包覆層（淺冰藍色） */
+/* ==========================================
+   護眼優化配色方案 (柔和、清晰、低彩度)
+   ========================================== */
+
+/* 1. 主背景與包覆層（柔和的淺灰藍色，不刺眼） */
 body, #wrapper, #main {
-    background-color: #2ba7f9 !important;
-    color: #1e293b !important;
+    background-color: #f0f4f8 !important;
+    color: #334155 !important;
 }
 
-/* 2. 第一區塊與第三區塊（第一種藍：天空淺藍） */
+/* 2. 第一區塊與第三區塊（沉穩的灰白色調，適合閱讀內容） */
 #main > section#one, 
 #main > section#three,
 .wrapper {
-    background-color: #bcb5fb !important;
-    color: #0f172a !important;
+    background-color: #ffffff !important;
+    color: #334155 !important;
 }
 
 #one h2, #three h2, h1, h2, h3, h4, h5, h6 {
-    color: #0369a1 !important;
-    border-bottom-color: #0284c7 !important;
+    color: #1e3a8a !important; /* 深藍色標題，清晰好辨識 */
+    border-bottom-color: #cbd5e1 !important;
 }
 
-/* 3. 第二區塊 spotlights（第二種藍：中水藍 / 深海洋藍交錯） */
+/* 3. 第二區塊 spotlights（柔和的交錯雙色，保護雙眼） */
 #two.spotlights > section {
-    background-color: #0a8dd9 !important;
-    color: #0f172a !important;
+    background-color: #e2e8f0 !important; /* 淺灰藍底色 */
+    color: #1e293b !important;
 }
 
 #two.spotlights > section:nth-child(2n) {
-    background-color: #29576a !important;
-    color: #b3b0ff !important;
+    background-color: #cbd5e1 !important; /* 稍微深一點的灰藍底色做區隔 */
+    color: #0f172a !important;
 }
 
 #two.spotlights > section:nth-child(2n) h3,
 #two.spotlights > section:nth-child(2n) p {
-    color: #22b7e4 !important;
+    color: #1e293b !important; /* 確保文字夠深，看得清楚 */
 }
 
-/* 4. 頁尾與聯絡區（第三種藍：沉穩深藍，保證文字清晰） */
+/* 4. 頁尾與聯絡區（沈穩的深藍灰，收尾安穩） */
 #contact, #footer {
-    background-color: #0c4a6e !important;
-    color: #2876a9 !important;
+    background-color: #1e293b !important; /* 深藍灰背景 */
+    color: #94a3b8 !important;            /* 柔和的次要文字色 */
 }
 
 #contact h3, #contact label, #contact .contact-method h3, #footer .copyright {
-    color: #3aa999 !important;
+    color: #f1f5f9 !important; /* 標題與重點文字使用高亮度，清晰可見 */
 }
 
-/* 修正輸入框與文字顏色 */
+/* 5. 修正輸入框與文字顏色（提升可讀性與互動感） */
 #contact input[type="text"], 
 #contact input[type="email"], 
 #contact textarea {
-    background-color: rgba(255, 255, 255, 0.2) !important;
-    color: #86a1e0 !important;
-    border-color: #7dd3fc !important;
+    background-color: rgba(255, 255, 255, 0.9) !important; /* 幾近全白背景，輸入時看得最清楚 */
+    color: #0f172a !important;                              /* 輸入的文字為深黑色 */
+    border-color: #64748b !important;
+}
+
+/* 輸入框聚焦時的提示 */
+#contact input[type="text"]:focus, 
+#contact input[type="email"]:focus, 
+#contact textarea:focus {
+    border-color: #3b82f6 !important;
+    outline: none !important;
 }
