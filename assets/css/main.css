@@ -3956,7 +3956,7 @@ input, select, textarea {
 
 /* 1. 主背景與包覆層（淺冰藍色） */
 body, #wrapper, #main {
-    background-color: #e0f2fe !important;
+    background-color: #2ba7f9 !important;
     color: #1e293b !important;
 }
 
@@ -3964,7 +3964,7 @@ body, #wrapper, #main {
 #main > section#one, 
 #main > section#three,
 .wrapper {
-    background-color: #bae6fd !important;
+    background-color: #bcb5fb !important;
     color: #0f172a !important;
 }
 
@@ -3975,28 +3975,28 @@ body, #wrapper, #main {
 
 /* 3. 第二區塊 spotlights（第二種藍：中水藍 / 深海洋藍交錯） */
 #two.spotlights > section {
-    background-color: #7dd3fc !important;
+    background-color: #0a8dd9 !important;
     color: #0f172a !important;
 }
 
 #two.spotlights > section:nth-child(2n) {
-    background-color: #38bdf8 !important;
-    color: #ffffff !important;
+    background-color: #29576a !important;
+    color: #b3b0ff !important;
 }
 
 #two.spotlights > section:nth-child(2n) h3,
 #two.spotlights > section:nth-child(2n) p {
-    color: #ffffff !important;
+    color: #22b7e4 !important;
 }
 
 /* 4. 頁尾與聯絡區（第三種藍：沉穩深藍，保證文字清晰） */
 #contact, #footer {
     background-color: #0c4a6e !important;
-    color: #f0f9ff !important;
+    color: #2876a9 !important;
 }
 
 #contact h3, #contact label, #contact .contact-method h3, #footer .copyright {
-    color: #ffffff !important;
+    color: #3aa999 !important;
 }
 
 /* 修正輸入框與文字顏色 */
@@ -4004,6 +4004,6 @@ body, #wrapper, #main {
 #contact input[type="email"], 
 #contact textarea {
     background-color: rgba(255, 255, 255, 0.2) !important;
-    color: #ffffff !important;
+    color: #86a1e0 !important;
     border-color: #7dd3fc !important;
 }
