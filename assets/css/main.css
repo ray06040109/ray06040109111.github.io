@@ -3950,3 +3950,60 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+		/* ===================================================
+   強行覆蓋 Forty 模板的深藍色背景 (改為三種藍色系)
+   =================================================== */
+
+/* 1. 主背景與包覆層（淺冰藍色） */
+body, #wrapper, #main {
+    background-color: #e0f2fe !important;
+    color: #1e293b !important;
+}
+
+/* 2. 第一區塊與第三區塊（第一種藍：天空淺藍） */
+#main > section#one, 
+#main > section#three,
+.wrapper {
+    background-color: #bae6fd !important;
+    color: #0f172a !important;
+}
+
+#one h2, #three h2, h1, h2, h3, h4, h5, h6 {
+    color: #0369a1 !important;
+    border-bottom-color: #0284c7 !important;
+}
+
+/* 3. 第二區塊 spotlights（第二種藍：中水藍 / 深海洋藍交錯） */
+#two.spotlights > section {
+    background-color: #7dd3fc !important;
+    color: #0f172a !important;
+}
+
+#two.spotlights > section:nth-child(2n) {
+    background-color: #38bdf8 !important;
+    color: #ffffff !important;
+}
+
+#two.spotlights > section:nth-child(2n) h3,
+#two.spotlights > section:nth-child(2n) p {
+    color: #ffffff !important;
+}
+
+/* 4. 頁尾與聯絡區（第三種藍：沉穩深藍，保證文字清晰） */
+#contact, #footer {
+    background-color: #0c4a6e !important;
+    color: #f0f9ff !important;
+}
+
+#contact h3, #contact label, #contact .contact-method h3, #footer .copyright {
+    color: #ffffff !important;
+}
+
+/* 修正輸入框與文字顏色 */
+#contact input[type="text"], 
+#contact input[type="email"], 
+#contact textarea {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+    border-color: #7dd3fc !important;
+}

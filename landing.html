@@ -1,229 +1,279 @@
 <!DOCTYPE HTML>
 <!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Forty by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Landing - Forty by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Landing - Forty by HTML5 UP</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        
+        <!-- 自訂藍色調背景樣式 (以淺藍色為主的三種藍色調組合) -->
+        <style>
+            /* 1. 主體背景：柔和淺藍色漸層 */
+            body, #wrapper {
+                background: linear-gradient(180deg, #eef7fa 0%, #d4ebf2 100%) !important;
+                color: #2c3e50 !important;
+            }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+            /* 2. 第一與第三區塊：明亮淺天藍色 */
+            #main > section#one, 
+            #main > section#three {
+                background-color: #e3f2fd !important;
+                color: #1e3a8a !important;
+            }
+            #one h2, #three h2 {
+                color: #0f172a !important;
+                border-bottom-color: #0284c7 !important;
+            }
 
-				<!-- Header -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt style2">
-						<a href="index.html" class="logo"><strong>Aquaculture公司</strong> <span>漁電規劃設計</span></a>
-						<nav>
-							<a href="#menu">選單</a>
-						</nav>
-					</header>
+            /* 3. 第二區塊（圖文/影片展示）：中度海洋藍/水藍色交錯背景 */
+            #two.spotlights > section {
+                background: linear-gradient(135deg, #b3e5fc 0%, #81d4fa 100%) !important;
+                color: #0f172a !important;
+            }
+            #two.spotlights > section:nth-child(2n) {
+                background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%) !important;
+            }
+            #two .content h3 {
+                color: #0369a1 !important;
+            }
+            #two .content p {
+                color: #334155 !important;
+            }
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">首頁</a></li>
-							<li><a href="landing.html">室內案場設計</a></li>
-							<li><a href="landing 2.html">戶外案場設計</a></li>
-							<li><a href="landing 3.html">漁電規劃設計</a></li>
-							<li><a href="landing 4.html">養殖設備</a></li>
-							<li><a href="landing 5.html">蝦類規劃</a></li>
-							<li><a href="landing 6.html">魚類規劃</a></li>
-						
-					</nav>
+            /* 4. 頁尾聯絡資訊區：穩重深藍色（保持高對比讀取度） */
+            #contact, #footer {
+                background-color: #1a365d !important;
+                color: #f1f5f9 !important;
+            }
+            #contact h3, #contact label, #footer .copyright {
+                color: #ffffff !important;
+            }
 
-				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the header element. -->
-					<section id="banner" class="style2">
-						<div class="inner">
-							<span class="image">
-								<img src="images/養殖示意圖有網子1115-6.jpg" alt="" />
-							</span>
-							<header class="major">
-								<h1>室內養殖設計</h1>
-							</header>
-							<div class="content">
-								<p>依據養殖種類需求配置<br />
-								控管品質穩度</p>
-							</div>
-						</div>
-					</section>
+            /* 按鈕與連結顏色微調 */
+            a {
+                color: #0284c7;
+            }
+            a:hover {
+                color: #0369a1;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
 
-				<!-- Main -->
-					<div id="main">
+        <!-- Wrapper -->
+            <div id="wrapper">
 
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h2>室內養殖場</h2>
-									</header>
-									<p>為養殖的魚群或蝦群安置一個溫暖的家。</p>
-								</div>
-							</section>
+                <!-- Header -->
+                <!-- Note: The "styleN" class below should match that of the banner element. -->
+                    <header id="header" class="alt style2">
+                        <a href="index.html" class="logo"><strong>Aquaculture公司</strong> <span>漁電規劃設計</span></a>
+                        <nav>
+                            <a href="#menu">選單</a>
+                        </nav>
+                    </header>
 
-						<!-- Two -->
-							<section id="two" class="spotlights">
-								<section>
-									<iframe width="1030" height="579" src="https://www.youtube.com/embed/sUGwFSqli70" title="養殖 3D漸成小動畫" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>養殖池設計規劃說明</h3>
-											</header>
-											<p>養殖池的設計需要考慮多個因素，包括魚群的種類、養殖密度、水流控制以及環境監測等，這些設施我們為您提供專業的設計與規劃。</p>
-											<ul class="actions">
-												
-											</ul>
-										</div>
-									</div>
-								</section>
-								<section>
-									<!<a href="generic.html" >
-										<script src="https://static.kuula.io/embed.js" data-kuula="https://kuula.co/share/hYR8d?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1" data-width="100%" data-height="640px"></script>
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>室內養殖好處</h3>
-											</header>
-											<p>1-避免遭受酸雨損失，免害怕颱風豪雨帶來的損失。</p>
-											<p>2-全方位的保護魚塭，不用擔心氣候因素的影響，提升產量較穩定。</p>
-											<p>3-室內容易保溫，避免冬天寒流魚群失溫</p>
-											<p>4-水質可以加以監控，穩定水產養殖用水的品質。</p>
-											<p>5-穩定乾淨水源的養殖，減少魚蝦的臭土味。</p>
-											<header class="major">
-												<h3>室內養殖壞處</h3>
-											</header>
-											<p>養殖設備造價比較貴。</p>
-											<ul class="actions">
-												
-											</ul>
-										</div>
-									</div>
-								</section>
-								<section>
-									<script src="https://static.kuula.io/embed.js" data-kuula="https://kuula.co/share/hYr9B?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1" data-width="100%" data-height="640px"></script>									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>室內養殖的期許</h3>
-											</header>
-											<p>運用室內養殖方式達到環境管理，使用嚴謹的中央管理養殖流程、飼料和育苗等措施，提升水產養殖的品質。不用再因為氣候因素遭受到損失。</p>
-											<ul class="actions">
-												
-											</ul>
-										</div>
-									</div>
-								</section>
-							</section>
+                <!-- Menu -->
+                    <nav id="menu">
+                        <ul class="links">
+                            <li><a href="index.html">首頁</a></li>
+                            <li><a href="landing.html">室內案場設計</a></li>
+                            <li><a href="landing 2.html">戶外案場設計</a></li>
+                            <li><a href="landing 3.html">漁電規劃設計</a></li>
+                            <li><a href="landing 4.html">養殖設備</a></li>
+                            <li><a href="landing 5.html">蝦類規劃</a></li>
+                            <li><a href="landing 6.html">魚類規劃</a></li>
+                        </ul>
+                    </nav>
 
-						<!-- Three -->
-							<section id="three">
-								<div class="inner">
-									<header class="major">
-										<h2>未來的展望</h2>
-									</header>
-									<p>Aquaculture公司負責所有的養殖技術指導，讓漁民安心的養殖。並規劃完整產銷計畫，包含飼料設備建議，讓養殖產能成為穩定的永續生產。</p>
-									<p>如有任何養殖相關問題，請與我們聯絡，在下方留下您的聯絡資料</p>
-									<ul class="actions">
-										<li><a href="landing.html" class="button next">回上方</a></li>
-										<li><a href="index.html" class="button next">回首頁</a></li>
-									</ul>
-								</div>
-							</section>
+                <!-- Banner -->
+                <!-- Note: The "styleN" class below should match that of the header element. -->
+                    <section id="banner" class="style2">
+                        <div class="inner">
+                            <span class="image">
+                                <img src="images/養殖示意圖有網子1115-6.jpg" alt="" />
+                            </span>
+                            <header class="major">
+                                <h1>室內養殖設計</h1>
+                            </header>
+                            <div class="content">
+                                <p>依據養殖種類需求配置<br />
+                                控管品質穩度</p>
+                            </div>
+                        </div>
+                    </section>
 
-				    </div>	
+                <!-- Main -->
+                    <div id="main">
 
-				<!-- Contact -->
-				<section id="contact">
-					<div class="inner">
-						<section>
-							<form method="post" action="#" onsubmit="return mailto()">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">姓名</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field half">
-										<label for="email">信箱Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">請您留下您寶貴的留言</label>
-										<textarea name="message" id="message" rows="6"></textarea>
-									</div>
-								</div>
-								
-								<script>
-									function mailto() {
-										name = document.getElementsByName('name')[0].value; // 把使用者輸入的名稱拿出來用
-										email = document.getElementsByName('email')[0].value; // 把使用者輸入的email拿出來用
-										message = document.getElementsByName('message')[0].value.replaceAll('\n', '%0D%0A'); // 把使用者輸入的內容拿出來用
-										window.location.href = "mailto:z0921807172@gmail.com?subject=洽詢養殖規劃&body=您好, 我是" + name + ":%0D%0A" + message;
-										return false;
-									}
-								</script>
-							</form>
-						</section>
-						<section class="split">
-							<section>
-								<div class="contact-method">
-									<span class="icon solid alt fa-envelope"></span>
-									<h3>信箱Email</h3>
-									<a href="#">z0921807172@gmail.com</a>
-								</div>
-							</section>
-							<section>
-								<div class="contact-method">
-									<span class="icon solid alt fa-phone"></span>
-									<h3>電話</h3>
-									<span>(03)12345678 </span>
-								</div>
-							</section>
-							<section>
-								<div class="contact-method">
-									<span class="icon solid alt fa-home"></span>
-									<h3>住址</h3>
-									<span>台灣省<br />
-									桃園市<br />
-									中壢區</span>
-								</div>
-							</section>
-						</section>
-					</div>
-				</section>
+                        <!-- One -->
+                            <section id="one">
+                                <div class="inner">
+                                    <header class="major">
+                                        <h2>室內養殖場</h2>
+                                    </header>
+                                    <p>為養殖的魚群或蝦群安置一個溫暖的家。</p>
+                                </div>
+                            </section>
 
-			<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<ul class="actions">
-							<li><a href="landing.html" class="button next">回上方</a></li>
-							<li><a href="index.html" class="button next">回首頁</a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Aquaculture公司</li><li>養殖設計: <a href="https://kuula.co/post/hftNM">作品網頁</a></li>
-						</ul>
-					</div>
-				</footer>
+                        <!-- Two -->
+                            <section id="two" class="spotlights">
+                                <section>
+                                    <iframe width="1030" height="579" src="https://www.youtube.com/embed/sUGwFSqli70" title="養殖 3D漸成小動畫" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <div class="content">
+                                        <div class="inner">
+                                            <header class="major">
+                                                <h3>養殖池設計規劃說明</h3>
+                                            </header>
+                                            <p>養殖池的設計需要考慮多個因素，包括魚群的種類、養殖密度、水流控制以及環境監測等，這些設施我們為您提供專業的設計與規劃。</p>
+                                            <ul class="actions">
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <!-- <script src="https://static.kuula.io/embed.js" data-kuula="https://kuula.co/share/hYR8d?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1" data-width="100%" data-height="640px"></script> -->
+                                    <div class="content">
+                                        <div class="inner">
+                                            <header class="major">
+                                                <h3>室內養殖好處</h3>
+                                            </header>
+                                            <p>1-避免遭受酸雨損失，免害怕颱風豪雨帶來的損失。</p>
+                                            <p>2-全方位的保護魚塭，不用擔心氣候因素的影響，提升產量較穩定。</p>
+                                            <p>3-室內容易保溫，避免冬天寒流魚群失溫</p>
+                                            <p>4-水質可以加以監控，穩定水產養殖用水的品質。</p>
+                                            <p>5-穩定乾淨水源的養殖，減少魚蝦的臭土味。</p>
+                                            <header class="major">
+                                                <h3>室內養殖壞處</h3>
+                                            </header>
+                                            <p>養殖設備造價比較貴。</p>
+                                            <ul class="actions">
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <script src="https://static.kuula.io/embed.js" data-kuula="https://kuula.co/share/hYr9B?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1" data-width="100%" data-height="640px"></script> 
+                                    <div class="content">
+                                        <div class="inner">
+                                            <header class="major">
+                                                <h3>室內養殖的期許</h3>
+                                            </header>
+                                            <p>運用室內養殖方式達到環境管理，使用嚴謹的中央管理養殖流程、飼料和育苗等措施，提升水產養殖的品質。不用再因為氣候因素遭受到損失。</p>
+                                            <ul class="actions">
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
 
-		</div>
+                        <!-- Three -->
+                            <section id="three">
+                                <div class="inner">
+                                    <header class="major">
+                                        <h2>未來的展望</h2>
+                                    </header>
+                                    <p>Aquaculture公司負責所有的養殖技術指導，讓漁民安心的養殖。並規劃完整產銷計畫，包含飼料設備建議，讓養殖產能成為穩定的永續生產。</p>
+                                    <p>如有任何養殖相關問題，請與我們聯絡，在下方留下您的聯絡資料</p>
+                                    <ul class="actions">
+                                        <li><a href="landing.html" class="button next">回上方</a></li>
+                                        <li><a href="index.html" class="button next">回首頁</a></li>
+                                    </ul>
+                                </div>
+                            </section>
 
-	<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+                    </div>  
+
+                <!-- Contact -->
+                <section id="contact">
+                    <div class="inner">
+                        <section>
+                            <form method="post" action="#" onsubmit="return mailto()">
+                                <div class="fields">
+                                    <div class="field half">
+                                        <label for="name">姓名</label>
+                                        <input type="text" name="name" id="name" />
+                                    </div>
+                                    <div class="field half">
+                                        <label for="email">信箱Email</label>
+                                        <input type="text" name="email" id="email" />
+                                    </div>
+                                    <div class="field">
+                                        <label for="message">請您留下您寶貴的留言</label>
+                                        <textarea name="message" id="message" rows="6"></textarea>
+                                    </div>
+                                </div>
+                                
+                                <script>
+                                    function mailto() {
+                                        name = document.getElementsByName('name')[0].value;
+                                        email = document.getElementsByName('email')[0].value;
+                                        message = document.getElementsByName('message')[0].value.replaceAll('\n', '%0D%0A');
+                                        window.location.href = "mailto:z0921807172@gmail.com?subject=洽詢養殖規劃&body=您好, 我是" + name + ":%0D%0A" + message;
+                                        return false;
+                                    }
+                                </script>
+                            </form>
+                        </section>
+                        <section class="split">
+                            <section>
+                                <div class="contact-method">
+                                    <span class="icon solid alt fa-envelope"></span>
+                                    <h3>信箱Email</h3>
+                                    <a href="#">z0921807172@gmail.com</a>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="contact-method">
+                                    <span class="icon solid alt fa-phone"></span>
+                                    <h3>電話</h3>
+                                    <span>(03)12345678 </span>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="contact-method">
+                                    <span class="icon solid alt fa-home"></span>
+                                    <h3>住址</h3>
+                                    <span>台灣省<br />
+                                    桃園市<br />
+                                    中壢區</span>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                </section>
+
+            <!-- Footer -->
+                <footer id="footer">
+                    <div class="inner">
+                        <ul class="actions">
+                            <li><a href="landing.html" class="button next">回上方</a></li>
+                            <li><a href="index.html" class="button next">回首頁</a></li>
+                        </ul>
+                        <ul class="copyright">
+                            <li>&copy; Aquaculture公司</li><li>養殖設計: <a href="https://kuula.co/post/hftNM">作品網頁</a></li>
+                        </ul>
+                    </div>
+                </footer>
+
+        </div>
+
+    <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
 
 </body>
 </html>
-<a href="#wrapper" class="btn">+</a>
